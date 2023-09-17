@@ -1,9 +1,9 @@
 
 const Input = ({label, state, setState, type = 'text'}) => {
   return (
-    <div class="form-floating">
-      <input type={type} class="form-control" id="floatingInput" placeholder={label} value={state} onChange={e => setState(e.target.value)} />
-      <label for="floatingInput">{label}</label>
+    <div className="form-floating">
+      <input type={type} className="form-control" id="floatingInput" placeholder={label} value={state} onChange={e => setState(e.target.value)} />
+      <label htmlFor="floatingInput">{label}</label>
     </div>
   )
 }
